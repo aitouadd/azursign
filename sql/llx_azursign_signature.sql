@@ -1,0 +1,22 @@
+CREATE TABLE llx_azursign_signature (
+  rowid integer AUTO_INCREMENT PRIMARY KEY,
+  entity integer NOT NULL DEFAULT 1,
+  fk_propal integer NOT NULL,
+  fk_soc integer DEFAULT NULL,
+  propal_ref varchar(128) DEFAULT NULL,
+  signer_name varchar(128) NOT NULL,
+  signer_ip varchar(64) DEFAULT NULL,
+  user_agent varchar(255) DEFAULT NULL,
+  signature_hash varchar(128) NOT NULL,
+  signature_image varchar(255) NOT NULL,
+  signed_pdf varchar(255) NOT NULL,
+  legal_text text,
+  legal_accepted smallint NOT NULL DEFAULT 0,
+  date_sign datetime NOT NULL,
+  fk_user_sign integer DEFAULT NULL,
+  datec datetime NOT NULL,
+  tms timestamp DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  INDEX idx_azursign_signature_fk_propal (fk_propal),
+  INDEX idx_azursign_signature_fk_soc (fk_soc),
+  INDEX idx_azursign_signature_date_sign (date_sign)
+) ENGINE=innodb;
