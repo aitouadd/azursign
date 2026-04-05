@@ -15,11 +15,7 @@
 
 ---
 
-## Screenshots
 
-| Signature Pad | Signed PDF Output |
-|:---:|:---:|
-| ![Signature pad modal with ERASE / VALIDATE / CANCEL](https://raw.githubusercontent.com/aitouadd/azursign/main/screenshots/signature-pad.png) | ![Signed PDF with signature stamp and metadata](https://raw.githubusercontent.com/aitouadd/azursign/main/screenshots/signed-pdf.png) |
 
 ---
 
